@@ -1,0 +1,8 @@
+inFile = open('inupt.txt')
+text1 = inFile.readlines()
+text = []
+for i in range(len(text1)):
+    text1[i] = text1[i].split()
+    for j in range(len(text1[i])):
+        text.append(text1[i][j])
+print(text)

@@ -1,0 +1,7 @@
+inFile = open('input.txt')
+stancii = list(map(int, inFile.readline().split()))
+avtobus1 = sorted(stancii[:2])
+avtobus2 = sorted(stancii[2:])
+avtobus1 = set(range(avtobus1[0], avtobus1[1] + 1))
+avtobus2 = set(range(avtobus2[0], avtobus2[1] + 1))
+print(len(avtobus1 & avtobus2))

@@ -1,0 +1,10 @@
+from math import sqrt, ceil
+print(*filter(lambda x: all(map(lambda y: (x % y != 0),range(2, ceil(sqrt(x)),        range(*map(int, open('input.txt').readline().split()))))))
+print(*filter(lambda x: all(map(lambda y: (x % y != 0), range(2, ceil(sqrt(x))))), range(2, *map(int, open('input.txt').readline().split()))))
+print(*filter(lambda x: all(map(lambda y: (x % y != 0),range(2, round(sqrt(x)) + 1))),range(2, int(input()) + 1)))
+print(*filter(lambda x: all(x % y != 0 for y in range(2, round(sqrt(x)) + 1)),range(2, int(input()) + 1)))
+
+
+
+print(reduce(lambda x, y: x * y,map(int, open('input.txt').read().replace('\n', ' ').split()))** 5)
+print(reduce(lambda x, y: x * y,map(int,open('input.txt').read().replace('\n', ' ').split())))

@@ -1,0 +1,27 @@
+from math import sqrt, ceil
+print\
+    (
+        *filter
+        (
+            lambda x: all(map
+                      (
+                          lambda y: x % y, list(range(3, int(sqrt(1001)) + 1, 2)) != 0, range(*map(int, open('input.txt').readline().split())
+                      )
+        )
+    )))
+
+print([2] + list(range(3, int(sqrt(1001)) + 1, 2)))
+
+
+
+from math import sqrt, ceil
+print\
+    (
+        *filter
+        (
+            lambda x: all(map
+                      (
+                          lambda y: x % y, range(2, ceil(sqrt(x)) != 0, range(*map(int, open('input.txt').readline().split())
+                      )
+        )
+    )))

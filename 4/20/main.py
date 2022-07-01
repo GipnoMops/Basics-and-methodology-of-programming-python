@@ -1,0 +1,5 @@
+s = input()
+k = s.count('h')
+s1 = s.replace('h', 'H', k - 1)
+s2 = s1.replace('H', 'h', 1)
+print(s2)
